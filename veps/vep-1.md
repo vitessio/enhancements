@@ -84,7 +84,7 @@ The Vitess team **MUST** document incompatibilities so that users who require sk
 
 ## References
 
-[RFC2119](https://www.ietf.org/rfc/rfc2119.txt)
-[Kubernetes Release Versioning](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/release/versioning.md)
-[Monitonic Versioning](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/)
-[Semantic Versioning](https://semver.org/)
+* [RFC2119](https://www.ietf.org/rfc/rfc2119.txt)
+* [Kubernetes Release Versioning](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/release/versioning.md)
+* [Monitonic Versioning](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/)
+* [Semantic Versioning](https://semver.org/)
