@@ -35,6 +35,12 @@ The proposed release cycle is best described as _Monotonic Versioning_ with a re
 
 Monotonic versioning itself is a modified version of [Semantic Versioning](https://semver.org/).
 
+## Release Criteria
+
+The release cadence is based on time-based rather than feature-based milestones. However; all releases must pass the suite of continuous integration and regression tests prior to release.
+
+Large or compatibility breaking features will be encouraged to merge within the first 6 weeks of the development cycle. Performance testing will be completed on a recurring basis throughout the development cycle.
+
 ## Backwards and Forwards Compatibility Promise
 
 For each `COMPATIBILITY` number, both backwards and forwards compatibility **MUST** be ensured. To use hypothetical examples:
