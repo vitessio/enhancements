@@ -26,7 +26,7 @@ The motivation for stable releases is two-fold:
 
 ## Versioning System
 
-The proposed release cycle is best described as _Monitonic Versioning_ with a release cadence similar to Kubernetes. The terminology `COMPATIBILITY.RELEASE` used in this document is directly sourced from the [Monitonic Versioning Manifesto](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/):
+The proposed release cycle is best described as _Monotonic Versioning_ with a release cadence similar to Kubernetes. The terminology `COMPATIBILITY.RELEASE` used in this document is directly sourced from the [Monotonic Versioning Manifesto](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/):
 
 1. The `COMPATIBILITY` number will be incremented every 12 weeks.
 2. Docker images will be tagged weekly as `COMPATIBILITY.yy+YYYYMMDD`.
