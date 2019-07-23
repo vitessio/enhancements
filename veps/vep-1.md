@@ -24,14 +24,14 @@ The motivation for stable releases is two-fold:
 
 2. Advanced users benefit from a clear cycle from which to merge upstream changes into their branch. This also allows for incompatible changes to be introduced at known intervals, which can help improve the health of the project.
 
-## Versioning System
+## Versioning and Release Cadence
 
 The proposed release cycle is best described as _Monotonic Versioning_ with a release cadence similar to Kubernetes. The terminology `COMPATIBILITY.RELEASE` used in this document is directly sourced from the [Monotonic Versioning Manifesto](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/):
 
 1. The `COMPATIBILITY` number will be incremented every 12 weeks.
 2. Docker images will be tagged weekly as `COMPATIBILITY.yy+YYYYMMDD`.
 3. Each supported version of Vitess will be tagged weekly.
-4. Each `COMPATIBILITY` number will be supported by the Open Source Vitess community for 9 months after the initial release. _Supported Fixes to Stable Releases_ is further described below.
+4. Each `COMPATIBILITY` number will be supported by the Open Source Vitess community for 9 months after the initial release. _Support Lifecycle_ is further described below.
 
 Monotonic versioning itself is a modified version of [Semantic Versioning](https://semver.org/).
 
@@ -39,7 +39,7 @@ Monotonic versioning itself is a modified version of [Semantic Versioning](https
 
 For each `COMPATIBILITY` number, both backwards and forwards compatibility **MUST** be ensured. To use hypothetical examples:
 
-### Example 1: Deprecating an unsafe or architecturally complex feature
+### Example 1: Deprecating an Unsafe or Architecturally Complex Feature
 
 Version `3.xx` of Vitess supports a query that is determined to be dangerous, and/or requires complex architectural support which needs to be deprecated to improve the code quality of the project:
 
@@ -66,19 +66,23 @@ vtdescribe: an obsolete utility
 
 Vitess `4.xx` **SHOULD** invoke a warning when attempting to use this utility, with the utility completely removed in Vitess `5.xx`.
 
-_This change is backward compatible in `Vitess 4.xx` because the utility can still be used. It is forwards compatible because attempting to use it will suggest the alternative functionality which is available._
+_This change is backward compatible in Vitess `4.xx` because the utility can still be used. It is forwards compatible because attempting to use it will suggest the alternative functionality which is available._
 
-## Supported Fixes to Stable Releases
+## Support Lifecycle
 
-Because the release cycle includes a new release every 12 weeks, bug fixes will typically only be pushed to the master branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
+Because the release cycle includes a new release every 12 weeks, most fixes will only be pushed to the master branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
 
-High severity bugs in this context include CVEs, data corruption, wrong results or outage inducing issues. The Vitess team **MAY** only backport bugs with higher visibility or user impact.
+High severity bugs in this context include CVEs, data corruption, wrong results or outage inducing issues. The Vitess team **MAY** decide to only backport bugs with higher user impact.
 
 ## Supported Upgrade Paths
 
 Because the _Backwards and Forwards Compatibility Promise_ is only between single major versions, it is not recommended to skip versions when upgrading. i.e.
 
-To use _Example 1: Deprecating an unsafe of architecturally complex feature_, a user upgrading from Vitess 3.x to 6.x would encounter a situation where a query works without warning or error, to the query is completely removed.
+	To use _Example 1_ (from above): Before upgrading, a user will be able to execute the statement `SELECT 1` on their Vitess `3.xx` system without error. If the user were to upgrade directly to `5.xx` this query would now result in an error by default, with a configuration option available to temporarily permit the query again.
+
+	Had the user upgraded to Vitess `4.xx` first, they would have received deprecation warnings when executing the soon-to-be unsupported query.
+
+	Further, had the user upgraded directly from `3.xx` to `6.xx` there would be no longer be support for a compatibility configuration option. The query would just be unsupported.
 
 The Vitess team **MUST** document incompatibilities so that users who require skip-version upgrades can achieve this provided they read all release notes between versions.
 
