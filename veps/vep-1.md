@@ -70,7 +70,7 @@ _This change is backward compatible in `Vitess 4.xx` because the utility can sti
 
 ## Supported Fixes to Stable Releases
 
-Because the release includes a new release every 12 weeks, bug fixes will typically only be pushed to the master branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
+Because the release cycle includes a new release every 12 weeks, bug fixes will typically only be pushed to the master branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
 
 High severity bugs in this context include CVEs, data corruption, wrong results or outage inducing issues. The Vitess team **MAY** only backport bugs with higher visibility or user impact.
 
