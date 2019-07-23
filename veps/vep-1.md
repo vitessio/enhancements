@@ -64,7 +64,7 @@ Version `3.xx` of Vitess supports a utility that has been made obsolete by recen
 vtdescribe: an obsolete utility
 ```
 
-Vitess `4.xx` of Vitess **SHOULD** invoke a warning when attempting to use this utility, with the utility completely removed in Vitess `5.xx`.
+Vitess `4.xx` **SHOULD** invoke a warning when attempting to use this utility, with the utility completely removed in Vitess `5.xx`.
 
 _This change is backward compatible in `Vitess 4.xx` because the utility can still be used. It is forwards compatible because attempting to use it will suggest the alternative functionality which is available._
 
