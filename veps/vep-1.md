@@ -41,7 +41,7 @@ For each `COMPATIBILITY` number, both backwards and forwards compatibility **MUS
 
 ### Example 1: Deprecating an unsafe or architecturally complex feature
 
-Version `3.xx` of Vitess supports a query that is determined to be dangerous, and/or requires complex architectural support which Vitess needs to be deprecated to improve the code quality of the project:
+Version `3.xx` of Vitess supports a query that is determined to be dangerous, and/or requires complex architectural support which needs to be deprecated to improve the code quality of the project:
 
 ```
 # A hypothetical dangerous query!
