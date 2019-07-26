@@ -30,7 +30,7 @@ The proposed release cycle is best described as _Monotonic Versioning_ with a re
 
 1. The `COMPATIBILITY` number will be incremented every 12 weeks.
 2. Docker images will be tagged weekly as `COMPATIBILITY.yy+YYYYMMDD`.
-3. Each supported version of Vitess will be tagged weekly.
+3. Each supported version of Vitess will be tagged weekly. If no changes have been made to the branch from the prior week, a tag will not be created.
 4. Each `COMPATIBILITY` number will be supported by the Open Source Vitess community for 9 months after the initial release. _Support Lifecycle_ is further described below.
 
 Monotonic versioning itself is a modified version of [Semantic Versioning](https://semver.org/).
