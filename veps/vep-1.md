@@ -74,6 +74,14 @@ Vitess `4.xx` **SHOULD** invoke a warning when attempting to use this utility, w
 
 _This change is backward compatible in Vitess `4.xx` because the utility can still be used. It is forwards compatible because attempting to use it will suggest the alternative functionality which is available._
 
+## Exclusions
+
+The following is not subject to the Backwards and Forwards Compatibility Promise:
+
+* Functionality which has been marked as experimental. As new features are developed, the Vitess authors may release it in a stable release but as experimental. As feedback is received, changes may be made to the feature without respecting the regular deprecation cycle associated with backwards and forwards compatibility.
+
+* Functionality limited to the source code and/or build environment. If the Vitess authors desired to make a change, such as upgrading the required Go version, or switching from `govendor` to Go modules, there is no requirement to ensure compatibility with older versions of Go. The promise is intended for user facing functionality.
+
 ## Support Lifecycle
 
 Because the release cycle includes a new release every 12 weeks, most fixes will only be pushed to the master branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
@@ -96,5 +104,5 @@ The Vitess team **MUST** document incompatibilities so that users who require sk
 
 * [RFC2119](https://www.ietf.org/rfc/rfc2119.txt)
 * [Kubernetes Release Versioning](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/release/versioning.md)
-* [Monitonic Versioning](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/)
+* [Monotonic Versioning](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/)
 * [Semantic Versioning](https://semver.org/)
