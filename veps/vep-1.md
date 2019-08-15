@@ -4,6 +4,7 @@
 VEP: 1
 Title: Vitess Release Cycle
 Author: Morgan Tocker
+Reviewers: Deepthi Sigireddi, Manik Taneja, Derek Perkins, David Weitzman, Rafael Chacon, Brian Ramos
 Status: Proposed
 Created: 2019-07-22
 ```
@@ -78,15 +79,15 @@ _This change is backward compatible in Vitess `4.xx` because the utility can sti
 
 The following is not subject to the Backwards and Forwards Compatibility Promise:
 
-* Functionality which has been marked as experimental. As new features are developed, the Vitess authors may release it in a stable release but as experimental. As feedback is received, changes may be made to the feature without respecting the regular deprecation cycle associated with backwards and forwards compatibility.
+* Functionality which has been marked as experimental. As a new feature is developed, the Vitess authors may release it in a stable release but as experimental. As feedback is received, changes may be made to the feature without respecting the regular deprecation cycle associated with backwards and forwards compatibility.
 
-* Functionality limited to the source code and/or build environment. If the Vitess authors desired to make a change, such as upgrading the required Go version, or switching from `govendor` to Go modules, there is no requirement to ensure compatibility with older versions of Go. The promise is intended for user facing functionality.
+* Functionality limited to the source code and/or build environment. If the Vitess authors desired to make a change, such as upgrading the required Go version, or switching from `govendor` to Go modules, there is no requirement to ensure compatibility with older versions of Go. The promise is intended for user-facing functionality.
 
 ## Support Lifecycle
 
 Because the release cycle includes a new release every 12 weeks, most fixes will only be pushed to the master branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
 
-High severity bugs in this context include CVEs, data corruption, wrong results or outage inducing issues. The Vitess team **MAY** decide to only backport bugs with higher user impact.
+High severity bugs in this context include [CVEs](https://cve.mitre.org/), data corruption, wrong results or outage inducing issues. The Vitess team **MAY** decide to only backport bugs with higher user impact.
 
 ## Supported Upgrade Paths
 
