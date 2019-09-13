@@ -6,7 +6,7 @@ Title: Vitess Release Cycle
 Author: Morgan Tocker
 Reviewers: Deepthi Sigireddi, Manik Taneja, Derek Perkins, David Weitzman, Rafael Chacon, Brian Ramos
 Status: Proposed
-Created: 2019-07-22
+Created: 2019-09-13
 ```
 
 ## Abstract
