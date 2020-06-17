@@ -5,7 +5,7 @@ VEP: 1
 Title: Vitess Release Cycle
 Author: Morgan Tocker
 Reviewers: Deepthi Sigireddi, Manik Taneja, Derek Perkins, David Weitzman, Rafael Chacon, Brian Ramos
-Status: Proposed
+Status: Approved
 Created: 2019-09-13
 ```
 
