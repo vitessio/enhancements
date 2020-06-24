@@ -21,10 +21,6 @@ All other sections of VEP-1 will continue to be in force without any change.
 3. Patch releases will be created as needed. Patch releases will follow SemVer. The numbering scheme will be `COMPATIBILITY.PATCH_NUMBER`. For example, the first patch release on `7.0`, if there is one, will be `7.0.1`. `PATCH_NUMBER` will be monotonically increasing.
 4. Events that trigger patch releases are major regressions in functionality or performance, and CVEs.
 
-## Release Criteria
-
-In addition to the criteria established in VEP-1, a nightly performance benchmark will be established. Any changes that impact performance by more than 5% as measured against the most recent major release will need to be addressed before another release can be made.
-
 ## References
 
 * [Semantic Versioning](https://semver.org/)
