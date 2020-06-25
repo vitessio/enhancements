@@ -5,7 +5,7 @@ VEP: 1
 Title: Vitess Patch Releases
 Author: Deepthi Sigireddi
 Reviewers: Morgan Tocker, Rafael Chacon Vivas, Guido Iaquinti, Derek Perkins, David Weitzman
-Status: Proposed
+Status: Approved
 Created: 2020-06-17
 ```
 
