@@ -5,8 +5,8 @@ VEP: 3
 Title: Vitess Upgrade Order
 Author: Sugu Sougoumarane
 Reviewers: Deepthi Sigireddi, Rafael Chacon Vivas
-Status: Proposed
-Created: 2020-07-14
+Status: Approved
+Created: 2020-07-24
 ```
 
 ## Abstract
