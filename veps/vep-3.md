@@ -1,4 +1,4 @@
-# VEP-2 Vitess Upgrade Order
+# VEP-3 Vitess Upgrade Order
 
 ```
 VEP: 3
