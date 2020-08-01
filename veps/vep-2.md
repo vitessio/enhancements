@@ -1,7 +1,7 @@
 # VEP-2 Vitess Release Cycle
 
 ```
-VEP: 1
+VEP: 2
 Title: Vitess Patch Releases
 Author: Deepthi Sigireddi
 Reviewers: Morgan Tocker, Rafael Chacon Vivas, Guido Iaquinti, Derek Perkins, David Weitzman
@@ -11,7 +11,7 @@ Created: 2020-06-17
 
 ## Abstract
 
-VEP-1(#1) established a release cycle for Vitess. Now that there have been 3 major releases, this VEP proposes some changes to the release cycle based on that experience.
+[VEP-1](https://github.com/vitessio/enhancements/blob/master/veps/vep-1.md) established a release cycle for Vitess. Now that there have been 3 major releases, this VEP proposes some changes to the release cycle based on that experience.
 All other sections of VEP-1 will continue to be in force without any change.
 
 ## Versioning and Release Cadence
