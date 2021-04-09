@@ -95,6 +95,12 @@ var (
 ```go
 package topo
 
+import (
+    // ... other imports elided
+
+    "github.com/spf13/pflag"
+)
+
 var (
 	// topoImplementation is the flag for which implementation to use.
 	topoImplementation string
@@ -110,7 +116,7 @@ var (
 	remoteOperationTimeout = 30*time.Second
 )
 
-func AddFlags(fs *flag.FlagSet) {
+func AddFlags(fs *pflag.FlagSet) {
     fs.StringVar(&topoImplementation, "topo_implementation", "", "the topology implementation to use")
     fs.StringVar(&topoGlobalServerAddress, "topo_global_server_address", "", "the address of the global topology server")
     fs.StringVar(&topoGlobalRoot, "topo_global_root", "", "the path of the global topology data in the global topology server")
@@ -152,6 +158,9 @@ the `-socket_file` flag, but none of the other flags in that package.
   `AddFlags()` and we should implicitly rely on the default value. Then, a
   duplication of the default value must also appear within `AddFlags()` to pass
   to the relevant `flag.<Type>Var(...)` call.
+* ⚠️ Moving to `pflag` implicitly changes all our flags from `-this-style` to
+  `--this-style`. **We will need to be very clear about this in the release
+  notes.**
 
 ### Subpackages
 
