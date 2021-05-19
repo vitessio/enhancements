@@ -18,7 +18,7 @@ All other sections of VEP-1 will continue to be in force without any change.
 ## Support Lifecycle
 Because the release cycle includes a new release every 12 weeks, most fixes will only be pushed to the master branch.
 An exception to this process will be made for high severity bugs.
-For these bug fixes, the fix will be merged into the oldest supported release branch where the bug is manifested.
+For these bug fixes, the fix will be applied to all supported release branch where the bug is manifested.
 
 Patch releases for supported versions are released at irregular intervals, depending on what has been fixed on the branch.
 
