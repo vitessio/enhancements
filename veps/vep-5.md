@@ -4,7 +4,7 @@
 VEP: 5
 Title: Vitess Bugfixes
 Author: Andres Taylor
-Reviewers: Deepthi Sigireddi
+Reviewers: Derek Perkins, Rafael Chaco, Harshit Gangal, Deepthi Sigireddi
 Status: Proposed
 Created: 2021-05-19
 ```
