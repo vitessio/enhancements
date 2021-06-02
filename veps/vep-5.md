@@ -4,7 +4,7 @@
 VEP: 5
 Title: Vitess Bugfixes
 Author: Andres Taylor
-Reviewers: Derek Perkins, Rafael Chaco, Harshit Gangal, Deepthi Sigireddi
+Reviewers: Derek Perkins, Rafael Chacon, Harshit Gangal, Deepthi Sigireddi
 Status: Proposed
 Created: 2021-05-19
 ```
@@ -28,7 +28,7 @@ High severity bugs in this context include CVEs, data corruption, wrong results 
 ## Versioning and Release Cadence
 
 1. The `COMPATIBILITY` number will be incremented every 4 months. For example, the next major release will have a `COMPATIBILITY` number of `11.0`.
-2. Each `COMPATIBILITY` number will be supported by the Open Source Vitess community for 12 months after the initial release. _Support Lifecycle_ is described in VEP-1.
+2. Each `COMPATIBILITY` number will be supported by the Open Source Vitess community for 12 months after the initial release.
 3. Patch releases will be created as needed. Patch releases will follow SemVer. The numbering scheme will be `COMPATIBILITY.PATCH_NUMBER`. For example, the first patch release on `7.0`, if there is one, will be `7.0.1`. `PATCH_NUMBER` will be monotonically increasing.
 4. Events that trigger patch releases are major regressions in functionality or performance, and CVEs.
 
