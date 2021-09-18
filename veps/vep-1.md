@@ -11,9 +11,9 @@ Created: 2019-09-13
 
 ## Abstract
 
-Vitess releases have historically been infrequent and not on a fixed release schedule. This has led to a status quo of advanced users maintaining their own branches and pulling in changes from Vitess master.
+Vitess releases have historically been infrequent and not on a fixed release schedule. This has led to a status quo of advanced users maintaining their own branches and pulling in changes from the Vitess main branch.
 
-While keeping _master_ in a permanent stable state is desirable, there will be future scenarios where breaking backward compatibility is desired. This VEP aims to codify a release cycle with rules around backward compatibility, supported upgrade paths, and deprecation schedule.
+While keeping _main_ in a permanent stable state is desirable, there will be future scenarios where breaking backward compatibility is desired. This VEP aims to codify a release cycle with rules around backward compatibility, supported upgrade paths, and deprecation schedule.
 
 Definitions of *MUST*, *SHOULD*, *MAY* from [RFC2119](https://www.ietf.org/rfc/rfc2119.txt).
 
@@ -85,7 +85,7 @@ The following is not subject to the Backwards and Forwards Compatibility Promise
 
 ## Support Lifecycle
 
-Because the release cycle includes a new release every 12 weeks, most fixes will only be pushed to the master branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
+Because the release cycle includes a new release every 12 weeks, most fixes will only be pushed to the main branch. An exception to this process will be made for high severity bugs, in which case a fix will be available in the weekly release for all currently supported versions.
 
 High severity bugs in this context include [CVEs](https://cve.mitre.org/), data corruption, wrong results or outage inducing issues. The Vitess team **MAY** decide to only backport bugs with higher user impact.
 
@@ -107,3 +107,8 @@ The Vitess team **MUST** document incompatibilities so that users who require sk
 * [Kubernetes Release Versioning](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/release/versioning.md)
 * [Monotonic Versioning](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/)
 * [Semantic Versioning](https://semver.org/)
+
+## Amendments
+
+- 2021-09-17
+    - Matt Lord, correct default branch name ([PR#10](https://github.com/vitessio/enhancements/pull/10))
