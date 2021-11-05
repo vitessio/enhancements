@@ -25,6 +25,13 @@ When a new flag is introduced, care must be taken to avoid name collisions (even
 
 These two issues are somewhat entangled with each other, and are some of the primary motivations, in addition to overall binary size, raised in a more general binary structure RFC in [vitessio/vitess#7471].
 
+## tl;dr
+
+1. Deprecate flag usages that are incompatible with `pflag`.
+1. Switch to `pflag`.
+1. Code refactor to encapsulate flag-backed variables.
+1. Adopt `viper`.
+
 ## Open Questions
 
 1. The changes in phases 1 and 2 _can_ break existing scripts.
@@ -304,6 +311,8 @@ viper.WatchConfig()
 
 // same as before: ReadInConfig; BindPFlags; Parse
 ```
+
+**NOTE**: vttablet and vtadmin have some support for yaml-based configs already; when we switch to `viper` we should update that as well, so we have a unified way config variables are loaded in from files.
 
 [pflag]: github.com/spf13/pflag
 [viper]: github.com/spf13/viper
