@@ -132,7 +132,6 @@ func ParseFlags(cmd string) {
 
 Now, other packages which declare flags can begin moving to `pflag`.
 Once all packages are adding their flags directly to the `pflag.CommandLine` flagset, we can remove the "TODO" interop line.
-Now, other packages can gradually move over to `pflag`, and once everything is adding their flags directly to the `pflag` flagset, we can remove the interop line.
 
 Note that there are other places that call `flag.Parse` directly (most in `go/test`, some in `go/cmd`) that will need the same treatment.
 In addition, places with subcommands will need to update callsites to take a `pflag.FlagSet`, but the changes there should be fairly minimal.
