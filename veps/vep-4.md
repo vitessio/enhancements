@@ -135,7 +135,7 @@ Once all packages are adding their flags directly to the `pflag.CommandLine` fla
 
 Note that there are other places that call `flag.Parse` directly (most in `go/test`, some in `go/cmd`) that will need the same treatment.
 In addition, places with subcommands will need to update callsites to take a `pflag.FlagSet`, but the changes there should be fairly minimal.
-For example, modulo running `goimports`, [this][mysqlctl_pflag_diff] is the full diff required to compile `mysqlctl`.
+For example, [this][mysqlctl_pflag_diff] is the full diff required to compile `mysqlctl` with `pflag`.
 
 We can make a GitHub project to divide and conquer this migration.
 
@@ -237,6 +237,7 @@ However, there's more we can improve!
 For binaries that have many options (like `vttablet`), specifying all of those on the command-line is cumbersome.
 In addition, we currently don't support live-reloading of configuration variables.
 Live-reload is a huge usability win; consider for example being able to adjust an operation timeout without having to restart the component ... :chefs-kiss:
+(Note that live-reload is only made possible by `viper`; we still need to figure out which settings we will support live-reload for, and the logic for those reloads. This should be separate RFC(s) and project(s)).
 
 The good news is: we can get all of this with `viper`!
 
