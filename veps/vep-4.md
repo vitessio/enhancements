@@ -5,8 +5,9 @@ VEP: 4
 Title: Vitess Flag Restructure, `pflag`, and `viper`
 Author: Andrew Mason
 Reviewers: Deepthi Sigireddi, Derek Perkins, Richard Bailey
-Status: In Review
+Status: Approved
 Created: 2021-04-07 (second major revision 2021-11-03)
+Approved: 2022-02-18
 ```
 
 ## Abstract
