@@ -1,12 +1,12 @@
 # # VEP-6 Vitess Release cadence
 
 ```
-VEP: 5
+VEP: 6
 Title: Vitess Release Cadence
-Author: Andres Taylor
+Author: Harshit Gangal
 Reviewers: 
 Status: 
-Created: 2024-10-29
+Created: 2024-11-02
 ```
 
 ## Abstract
