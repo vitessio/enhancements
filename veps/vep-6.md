@@ -28,11 +28,10 @@ The terminology `COMPATIBILITY.RELEASE` used in this document is directly source
 4. Events that trigger patch releases are major regressions in functionality or performance, and CVEs.
 
 ## Support Lifecycle
-The release cycle includes a new release every 6 months, most fixes will only be pushed to the main branch.
-An exception to this process will be made for high severity bugs.
-For these bug fixes, the fix will be applied to all supported release branches where the bug is manifested.
+A new version is released every 6 months, with each version supported for 12 months. At any time, two versions are actively supported: the latest release and the one prior.
 
-Patch releases for supported versions are released at irregular intervals, depending on what has been fixed on the branch.
+Bug fixes are applied to the main branch, except for high-severity issues, which will be patched in all supported branches where the issue occurs.
 
-High severity bugs in this context include CVEs, data corruption, wrong results or outage inducing issues. 
-The Vitess team may decide to only fix bugs in release branches with higher user impact.
+Patch releases for these supported versions are released as needed, depending on the fixes available in each branch.
+
+High-severity issues in this context include CVEs, data corruption, incorrect results, or issues causing outages. The Vitess team may choose to prioritize bug fixes in branches with the highest user impact.
