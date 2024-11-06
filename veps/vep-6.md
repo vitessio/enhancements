@@ -1,4 +1,4 @@
-# # VEP-6 Vitess Release cadence
+# # VEP-6 Vitess Release Cycle
 
 ```
 VEP: 6
