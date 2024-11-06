@@ -2,7 +2,7 @@
 
 ```
 VEP: 6
-Title: Vitess Release Cadence
+Title: Vitess Release Cycle
 Author: Harshit Gangal
 Reviewers: 
 Status: 
