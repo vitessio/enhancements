@@ -12,7 +12,7 @@ Created: 2024-11-02
 ## Abstract
 
 [VEP-1](https://github.com/vitessio/enhancements/blob/main/veps/vep-1.md) established a support lifecycle for Vitess. [VEP-2](https://github.com/vitessio/enhancements/blob/main/veps/vep-2.md) later amended parts of it.
-[VEP-5](https://github.com/vitessio/enhancements/blob/main/veps/vep-5.md) modified the yearly major release to 3 and 1 year support for each major release, thus replaces the Support lifecycle section in VEP-1, and all of VEP-2.
+[VEP-5](https://github.com/vitessio/enhancements/blob/main/veps/vep-5.md) changed the frequency of major releases to 3 per year and established a 1 year support cycle for each major release, thus replacing the Support Lifecycle section in VEP-1, and all of VEP-2.
 This VEP suggests a change to how often releases are made and its support lifecycle thus replacing all of VEP-5.
 
 All other sections of VEP-1 will continue to be in force without any change.
