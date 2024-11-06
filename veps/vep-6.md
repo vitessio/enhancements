@@ -19,8 +19,7 @@ All other sections of VEP-1 will continue to be in force without any change.
 
 ## Versioning and Release Cadence
 
-The proposed release cycle is best described as _Monotonic Versioning_ with a release cadence similar to Kubernetes.
-The terminology `COMPATIBILITY.RELEASE` used in this document is directly sourced from the [Monotonic Versioning Manifesto](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/):
+The proposed release cycle is best described as _Monotonic Versioning_, using the terminology `COMPATIBILITY.RELEASE` from the [Monotonic Versioning Manifesto](http://blog.appliedcompscilab.com/monotonic_versioning_manifesto/):
 
 1. The `COMPATIBILITY` number will be incremented every 6 months. For example, the next major release will have a `COMPATIBILITY` number of `22.0`.
 2. Each `COMPATIBILITY` number will be supported by the Open Source Vitess community for 12 months after the initial release.
