@@ -4,8 +4,8 @@
 VEP: 6
 Title: Vitess Release Cycle
 Author: Harshit Gangal
-Reviewers: 
-Status: 
+Reviewers: Derek Perkins, Deepthi Sigireddi, Florent Poinsard
+Status: Proposed
 Created: 2024-11-02
 ```
 
