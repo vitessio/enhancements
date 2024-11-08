@@ -4,8 +4,8 @@
 VEP: 6
 Title: Vitess Release Cycle
 Author: Harshit Gangal
-Reviewers: Derek Perkins, Deepthi Sigireddi, Florent Poinsard
-Status: Proposed
+Reviewers: Derek Perkins, Deepthi Sigireddi, Florent Poinsard, Matt Lord, Rohit Nayak
+Status: Approved
 Created: 2024-11-02
 ```
 
@@ -24,7 +24,7 @@ The proposed release cycle is best described as _Monotonic Versioning_, using th
 1. The `COMPATIBILITY` number will be incremented every 6 months. For example, the next major release will have a `COMPATIBILITY` number of `22.0`.
 2. Each `COMPATIBILITY` number will be supported by the Open Source Vitess community for 12 months after the initial release.
 3. Patch releases will be created as needed. Patch releases will follow SemVer. The numbering scheme will be `COMPATIBILITY.PATCH_NUMBER`. For example, the first patch release on `22.0`, if there is one, will be `22.0.1`. `PATCH_NUMBER` will be monotonically increasing.
-4. Events that trigger patch releases are major regressions in functionality or performance, and CVEs.
+4. Events that trigger patch releases are critical bugs, major regressions in functionality or performance, and CVEs.
 
 ## Support Lifecycle
 A new version is released every 6 months, with each version supported for 12 months. At any time, two versions are actively supported: the latest release and the one prior.
