@@ -4,7 +4,7 @@
 VEP: 7
 Title: AI Assistance Disclosure
 Author: Nick Van Wiggeren
-Reviewers: 
+Reviewers: Dirkjan Bussink
 Status: Draft
 Created: 2025-08-25
 ```
@@ -48,11 +48,13 @@ AI Assistance: GitHub Copilot suggested completions for standard SQL patterns in
 
 ### What Doesn't Need Disclosure
 
-Basic IDE features like single-word autocomplete, spell check, and standard linting suggestions don't require disclosure. Using AI to review human-generated code does not require disclosure.
+Basic IDE features like single-word autocomplete, spell check, and standard linting suggestions don't require disclosure. Using AI to review human-generated code in the process of writing a PR does not require disclosure.
 
 ## Rationale
 
-This practice creates mutual understanding between contributors and maintainers. Contributors can use AI tools productively while maintainers gain context about the work they're reviewing. The goal is building a system that makes code review more effective and collaborative.
+It's required that PR authors understand the code that they're proposing, and take responsibility for responding to feedback. Using AI tools does not absolve humans from that expectation.
+
+By encouraging disclosure, we aim to create mutual understanding between contributors and maintainers. Contributors can use AI tools productively while maintainers gain context about the work they're reviewing. The goal is building a system that makes code review more effective and collaborative.
 
 ## Implementation
 
