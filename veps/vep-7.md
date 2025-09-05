@@ -4,8 +4,8 @@
 VEP: 7
 Title: AI Assistance Disclosure
 Author: Nick Van Wiggeren
-Reviewers: Dirkjan Bussink
-Status: Draft
+Reviewers: Dirkjan Bussink, Harshit Gangal, Arthur Schreiber, Matt Lord, Derek Perkins, Florent Poinsard
+Status: Approved
 Created: 2025-08-25
 ```
 
